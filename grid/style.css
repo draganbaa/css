@@ -1,0 +1,13 @@
+.divMain {
+  display: grid;
+  grid-template-columns: 100px 100px 200px;
+  margin: 10px 0;
+}
+
+.divOne {
+  background-color: rgb(154, 35, 35);
+}
+
+.divTwo {
+  background-color: wheat;
+}

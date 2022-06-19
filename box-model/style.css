@@ -1,0 +1,20 @@
+.pagination {
+  margin: 10px;
+}
+
+.btn {
+  padding: 8px 5px;
+}
+
+.stranica {
+  margin: 5px;
+}
+
+.stretch {
+  padding: 10px 5px;
+  transition: padding 1s;
+}
+
+.stretch:hover {
+  padding: 20px 30px;
+}

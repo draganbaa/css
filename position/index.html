@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="height: 3000px; padding-top: 50px; padding-left: 80px">
+    <div
+      style="
+        background-color: black;
+        color: wheat;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 40px;
+        z-index: 100;
+      "
+      class="header"
+    >
+      Header
+    </div>
+
+    <div
+      style="
+        background-color: green;
+        color: white;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        top: 40px;
+        width: 70px;
+      "
+    >
+      Sidebar
+      <div
+        style="
+          position: absolute;
+          background-color: red;
+          color: white;
+          right: 0;
+          top: 0;
+        "
+      >
+        X
+      </div>
+    </div>
+
+    <div
+      style="
+        position: absolute;
+        background-color: red;
+        color: white;
+        right: 10px;
+        top: 50px;
+      "
+    >
+      Absolute
+    </div>
+    <div
+      style="
+        background-color: red;
+        height: 200px;
+        width: 200px;
+        position: static;
+      "
+    >
+      div 1
+    </div>
+    <div
+      style="
+        background-color: blue;
+        height: 200px;
+        width: 200px;
+        position: relative;
+      "
+    >
+      div 2
+      <div
+        style="
+          position: absolute;
+          background-color: rgb(73, 70, 70);
+          opacity: 0.7;
+          color: white;
+          bottom: 10px;
+          right: 10px;
+          border: 1px solid rgb(73, 70, 70);
+          border-radius: 5px;
+        "
+      >
+        5:00
+      </div>
+    </div>
+  </body>
+</html>

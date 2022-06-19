@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="divMain">
+      <div class="divOne">Div 1</div>
+      <div class="divTwo">
+        Div 2
+        <p>lorem ipsum</p>
+      </div>
+    </div>
+
+    <div class="divMain">
+      <div class="divOne">100px</div>
+      <div class="divTwo">
+        100px
+        <p>lorem ipsum</p>
+      </div>
+      <div class="divOne">200px</div>
+      <div class="divTwo">
+        100px
+        <p>lorem ipsum</p>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 100px 1fr">
+      <div class="divOne">100px</div>
+      <div class="divTwo">1fr</div>
+    </div>
+
+    <div
+      style="
+        margin: 10px 0;
+        display: grid;
+        grid-template-columns: 100px 1fr 2fr;
+      "
+    >
+      <div class="divOne">100px</div>
+      <div class="divTwo">1fr</div>
+      <div class="divOne">2r</div>
+    </div>
+
+    <div
+      style="
+        margin: 10px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+      "
+    >
+      <div style="height: 200px" class="divOne">1fr</div>
+      <div style="height: 200px" class="divTwo">1fr</div>
+      <div style="height: 200px" class="divOne">1fr</div>
+      <div style="height: 200px" class="divTwo">1fr</div>
+      <div style="height: 200px" class="divOne">1fr</div>
+      <div style="height: 200px" class="divTwo">1fr</div>
+    </div>
+  </body>
+</html>
