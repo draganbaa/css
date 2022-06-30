@@ -5,3 +5,52 @@
     clear: both;
   }
 }
+
+//MEDIA QUERYES
+//breakpoints
+// 0 - 600px      Phone
+// 600 - 900px    Tablet Portrait
+// 900 - 1200px   Tablet Landscape
+// 1200 - 1800px  Our Styles
+// 1800px+        Big Screens
+
+//$breakpoint arguments:
+// -phone
+// -tab-port
+// -tab-land
+// -big-d
+//em su bolji za media qurye jer kad uzimaju remove
+//ne koriste font-size iz html elementa koji smo mi zadali
+//nego onaj koji je browser dao
+//1em = 16px u najvise slucajeva
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    //media za telefon
+    @media (max-width: 37.5em) {
+      //600px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    //media za tablet-portrait
+    @media (max-width: 56.25em) {
+      //900px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    //media za tablet-lanscape
+    @media (max-width: 75em) {
+      //1200px
+      @content;
+    }
+  }
+  @if $breakpoint == big-d {
+    //media za velike ekrane
+    @media (min-width: 112.5em) {
+      //1800px
+      @content;
+    }
+  }
+}
