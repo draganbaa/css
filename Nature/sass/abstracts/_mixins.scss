@@ -1,6 +1,6 @@
 @mixin clearfix {
   &::after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -23,6 +23,8 @@
 //ne koriste font-size iz html elementa koji smo mi zadali
 //nego onaj koji je browser dao
 //1em = 16px u najvise slucajeva
+
+// order base + type > general layout + grid > page layout > components
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
