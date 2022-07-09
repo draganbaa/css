@@ -48,3 +48,9 @@ body {
     padding: 0;
   }
 }
+
+//kad netko selektuje tekst
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
